@@ -6,7 +6,7 @@ const Selection = (props) => {
   const [style, setStyle] = useState({ background: "" });
 
   const updateSelectionStyle = (newStyle) => {
-    setStyle(newStyle);
+    setStyle({ ...newStyle });
   };
 
   const handleClick = () => {
@@ -16,7 +16,7 @@ const Selection = (props) => {
   return (
     <div
       className="fix-box"
-      style={{ background: style.background }}
+      style={style}
       onClick={handleClick}
     >
     </div>
