@@ -16,7 +16,7 @@ const Selection = (props) => {
   return (
     <div
       className="fix-box"
-      style={style}
+      style={{ background: style.background }}
       onClick={handleClick}
     >
     </div>
