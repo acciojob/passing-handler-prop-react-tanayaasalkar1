@@ -5,12 +5,8 @@ const Selection = (props) => {
 
   const [style, setStyle] = useState({ background: "" });
 
-  const updateSelectionStyle = (newStyle) => {
-    setStyle({ ...newStyle });
-  };
-
   const handleClick = () => {
-    props.applyColor(updateSelectionStyle);
+    props.applyColor(setStyle);
   };
 
   return (
